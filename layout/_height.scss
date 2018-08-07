@@ -1,0 +1,12 @@
+// height
+.h {
+  height: 100%;
+  &-auto {
+    height: auto;
+  }
+  @for $i from 0 through 42 {
+    &_#{$i} {
+      height: #{$i}px;
+    }
+  }
+}

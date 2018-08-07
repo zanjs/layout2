@@ -1,0 +1,26 @@
+// flex
+.flex {
+  display: flex;
+  @for $i from 1 through 4 {
+    &_#{$i} {
+      flex: $i;
+    }
+  }
+  &-direction {
+    &-column {
+      flex-direction: column;
+    }
+  }
+  &.row {
+    flex-direction: row;
+  }
+  &.row-reverse {
+    flex-direction: row-reverse;
+  }
+  &.column {
+    flex-direction: column;
+  }
+  &.column-reverse {
+    flex-direction: column-reverse;
+  }
+}
